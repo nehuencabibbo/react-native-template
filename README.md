@@ -1,58 +1,36 @@
-# Welcome to your Expo app 👋
+# React Native Template Project
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Template to start React Native projects, can eventually be updated.
+
+## Technologies it has
+
+- **Expo**: Framework for React applications that run natively on Android, iOS, and the web.
+- **NativeWind**: Tailwind CSS for React Native, providing a seamless styling experience.
+- **React Native Reusables**: Accessible UI primitives for React Native, inspired by shadcn/ui.
+- **Husky**: Git hooks for pre-commit linting and formatting.
+- **TypeScript**: Static typing for a more robust developer experience.
+- **Expo Router**: File-based routing for React Native and web applications.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Lucide Icons**: Beautiful & consistent icons for the user interface.
+- **React Native Reanimated**: Powerful animation library for smooth UI transitions.
+- **Code Quality**: Prettier and ESLint configured with Husky for consistent code style.
 
 ## Get started
 
 1. Install dependencies
 
    ```bash
-   npm install
+   npm i
    ```
 
 2. Start the app
 
    ```bash
-   npx expo start
+   npm run android
    ```
 
-3. Configure Android SDK path
-
-   Ensure `android/local.properties` contains your SDK location:
-
-   ```
-   sdk.dir=/Users/ncabibbo/Library/Android/sdk
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+It's possible the first time `android/local.properties` is not automatically created and some error regarding `ANDROID_HOME` is thrown. If so run:
 
 ```bash
-npm run reset-project
+node scripts/setup-android-js
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
