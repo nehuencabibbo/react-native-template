@@ -40,17 +40,6 @@
             "backgroundColor": "#000000"
           }
         }
-      ],
-      "expo-sqlite",
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/images/logo.jpg",
-          "color": "#ffffff",
-          "defaultChannel": "default",
-          "sounds": [],
-          "enableBackgroundRemoteNotifications": false
-        }
       ]
     ],
     "experiments": {
